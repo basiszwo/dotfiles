@@ -1,0 +1,9 @@
+h3. Stefan Botzenharts Dot Files
+
+These are my config files for my systems
+
+h4. Installation
+
+git clone git://github.com/basiszwo/dotfiles ~/.dotfiles
+cd ~/.dotfiles
+sh symlink_dotfiles.sh
