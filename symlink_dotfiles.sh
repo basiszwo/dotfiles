@@ -7,7 +7,8 @@ autotest
 autotest_images
 gemrc
 gitshrc
-my.cnf"
+my.cnf
+gitconfig"
 
 for file in $FILES
 do

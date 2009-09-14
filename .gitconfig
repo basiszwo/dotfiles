@@ -1,0 +1,13 @@
+[user]
+  name = Stefan Botzenhart
+  email = sb@basiszwo.com
+  
+[apply]
+  whitespace = nowarn
+  
+[alias]
+  co = checkout
+  changes = diff --name-status -r
+
+[diff]
+  renames = true
