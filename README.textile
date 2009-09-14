@@ -1,9 +1,11 @@
-h3. Stefan Botzenharts Dot Files
+h2. Stefan Botzenharts Dot Files
 
 These are my config files for my systems
 
-h4. Installation
+h3. Installation
 
+<pre><code>
 git clone git://github.com/basiszwo/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 sh symlink_dotfiles.sh
+</pre></code>
