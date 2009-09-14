@@ -12,5 +12,5 @@ gitconfig"
 
 for file in $FILES
 do
-  ln -s ~/git-files/dotfiles/.$file ~/.$file
+  ln -s ~/.dotfiles/.$file ~/.$file
 done
