@@ -11,3 +11,11 @@
 
 [diff]
   renames = true
+
+[color]
+  sh = false
+  status = auto
+  branch = auto
+
+[color "sh"]
+  branch = red
