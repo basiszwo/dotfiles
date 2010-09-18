@@ -1,3 +1,6 @@
+# Colorize the Terminal
+export CLICOLOR=1;
+
 # Setup Amazon EC2 Command-Line Tools
 export EC2_HOME=~/ec2-api-tools
 export PATH=$PATH:$EC2_HOME/bin
@@ -39,6 +42,7 @@ alias mysql_stop="sudo /usr/local/mysql/support-files/mysql.server stop"
 
 #alias ars="sudo apachectl restart"
 alias ars="sudo /usr/sbin/httpd -k restart"
+alias prs="touch tmp/restart.txt"
 
 alias firefox-pm='/Applications/Firefox.app/Contents/MacOS/firefox-bin -ProfileManager'
 alias firefox-default='/Applications/Firefox.app/Contents/MacOS/firefox-bin'
