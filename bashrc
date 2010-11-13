@@ -20,7 +20,7 @@ export MANPATH=/opt/local/share/man:$MANPATH
 export LC_CTYPE=de_DE.UTF-8
 
 # automatically include cucumber features while using autotest
-export AUTOFEATURE=true
+# export AUTOFEATURE=true
 
 # aliases for listing directories
 alias ll="ls -l"
@@ -50,3 +50,5 @@ alias firefox-dev='/Applications/Firefox.app/Contents/MacOS/firefox-bin -p devel
 alias firefox-monit='/Applications/Firefox.app/Contents/MacOS/firefox-bin -p monitoring'
 
 alias reload=". ~/.bash_profile"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
