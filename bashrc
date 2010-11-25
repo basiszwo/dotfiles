@@ -20,7 +20,7 @@ export MANPATH=/opt/local/share/man:$MANPATH
 export LC_CTYPE=de_DE.UTF-8
 
 # automatically include cucumber features while using autotest
-# export AUTOFEATURE=true
+export AUTOFEATURE=true
 
 # aliases for listing directories
 alias ll="ls -l"
