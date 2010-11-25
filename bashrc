@@ -10,7 +10,7 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
 
 export EDITOR='mate -w'
-export PATH=$PATH:$HOME/bin:/usr/local/bin:/opt/local/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/git/bin
+export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/Users/sb/.gem/ruby/1.8/bin
 export SHELL=/bin/bash
 
 # Finished adapting your PATH environment variable for use with MacPorts.
@@ -50,3 +50,7 @@ alias firefox-dev='/Applications/Firefox.app/Contents/MacOS/firefox-bin -p devel
 alias firefox-monit='/Applications/Firefox.app/Contents/MacOS/firefox-bin -p monitoring'
 
 alias reload=". ~/.bash_profile"
+
+
+# has to be the last command !!
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.

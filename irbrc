@@ -33,3 +33,5 @@ if script_console_running
   require 'logger'
   Object.const_set(:RAILS_DEFAULT_LOGGER, Logger.new(STDOUT))
 end
+
+IRB.conf[:PROMPT_MODE] = :DEFAULT
