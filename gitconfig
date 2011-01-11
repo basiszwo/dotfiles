@@ -1,6 +1,6 @@
 [user]
-  name = Stefan Botzenhart
-  email = sb@basiszwo.com
+	name = Stefan Botzenhart
+	email = sb@basiszwo.com
   
 [apply]
   whitespace = nowarn
@@ -9,6 +9,13 @@
   co = checkout
   changes = diff --name-status -r
   sh = git-sh
+  st = status
+  ci = commit
+  br = branch
+  df = diff
+  lg = log -p
+  spull = !git-svn fetch && git-svn rebase
+  spush = !git-svn dcommit  
 
 [diff]
   renames = true

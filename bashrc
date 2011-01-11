@@ -44,6 +44,9 @@ alias mysql_stop="sudo /usr/local/mysql/support-files/mysql.server stop"
 alias ars="sudo /usr/sbin/httpd -k restart"
 alias prs="touch tmp/restart.txt"
 
+alias redis-start="redis-server /usr/local/etc/redis.conf"
+alias redis-stop=""
+
 alias firefox-pm='/Applications/Firefox.app/Contents/MacOS/firefox-bin -ProfileManager'
 alias firefox-default='/Applications/Firefox.app/Contents/MacOS/firefox-bin'
 alias firefox-dev='/Applications/Firefox.app/Contents/MacOS/firefox-bin -p development'
