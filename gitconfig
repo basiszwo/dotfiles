@@ -3,8 +3,12 @@
 	email = sb@basiszwo.com
   
 [apply]
-  whitespace = nowarn
-  
+  whitespace = fix
+
+[core]
+  autocrlf = input
+  whitespace = fix,indent-with-non-tab,trailing-space,-cr-at-eol,space-before-tab
+
 [alias]
   co = checkout
   changes = diff --name-status -r
