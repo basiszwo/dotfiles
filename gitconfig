@@ -1,14 +1,25 @@
 [user]
-  name = Stefan Botzenhart
-  email = sb@basiszwo.com
+	name = Stefan Botzenhart
+	email = sb@basiszwo.com
   
 [apply]
-  whitespace = nowarn
-  
+  whitespace = fix
+
+[core]
+  autocrlf = input
+  whitespace = fix,indent-with-non-tab,trailing-space,-cr-at-eol,space-before-tab
+
 [alias]
   co = checkout
   changes = diff --name-status -r
   sh = git-sh
+  st = status
+  ci = commit
+  br = branch
+  df = diff
+  lg = log -p
+  spull = !git-svn fetch && git-svn rebase
+  spush = !git-svn dcommit  
 
 [diff]
   renames = true
