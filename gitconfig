@@ -1,7 +1,8 @@
 [user]
 	name = Stefan Botzenhart
-	email = sb@basiszwo.com
-  
+  # email = sb@basiszwo.com
+	email = sb@ninjaconcept.com
+
 [apply]
   whitespace = fix
 
@@ -19,7 +20,7 @@
   df = diff
   lg = log -p
   spull = !git-svn fetch && git-svn rebase
-  spush = !git-svn dcommit  
+  spush = !git-svn dcommit
 
 [diff]
   renames = true
@@ -44,12 +45,14 @@
   frag = magenta bold
   old = red bold
   new = green bold
-  
+
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
-  
+
 [github]
   user = basiszwo
-  
+
+[core]
+	quotepath = false

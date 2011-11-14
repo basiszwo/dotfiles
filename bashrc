@@ -20,7 +20,23 @@ export MANPATH=/opt/local/share/man:$MANPATH
 export LC_CTYPE=de_DE.UTF-8
 
 # automatically include cucumber features while using autotest
-export AUTOFEATURE=true
+# export AUTOFEATURE=true
+
+
+# # add current git branch to bash
+# function parse_git_branch () {
+#   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+# }
+#
+# RED="\[\033[0;31m\]"
+# YELLOW="\[\033[0;33m\]"
+# GREEN="\[\033[0;32m\]"
+# NO_COLOUR="\[\033[0m\]"
+# HOSTNAME=`hostname`
+#
+# PS1="$GREEN\u@$(hostname -s)$NO_COLOUR:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
+
+
 
 # aliases for listing directories
 alias ll="ls -l"
@@ -57,6 +73,7 @@ alias firefox-dev='/Applications/Firefox.app/Contents/MacOS/firefox-bin -p devel
 alias firefox-monit='/Applications/Firefox.app/Contents/MacOS/firefox-bin -p monitoring'
 
 alias reload=". ~/.bashrc"
+alias h='curl -sIw "Time: %{time_total}s\n" -X GET'
 
 
 # COLORS
