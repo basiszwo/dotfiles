@@ -45,17 +45,16 @@ alias grma='git ls-files --deleted | xargs git rm'
 alias mysql_start="sudo /usr/local/mysql/support-files/mysql.server start"
 alias mysql_stop="sudo /usr/local/mysql/support-files/mysql.server stop"
 
+alias psql_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias psql_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
 #alias ars="sudo apachectl restart"
 alias ars="sudo /usr/sbin/httpd -k restart"
 alias prs="touch tmp/restart.txt"
 
-alias redis-start="redis-server /usr/local/etc/redis.conf"
-alias redis-stop=""
+# alias redis-start="redis-server /usr/local/etc/redis.conf"
+# alias redis-stop=""
 
-alias firefox-pm='/Applications/Firefox.app/Contents/MacOS/firefox-bin -ProfileManager'
-alias firefox-default='/Applications/Firefox.app/Contents/MacOS/firefox-bin'
-alias firefox-dev='/Applications/Firefox.app/Contents/MacOS/firefox-bin -p development'
-alias firefox-monit='/Applications/Firefox.app/Contents/MacOS/firefox-bin -p monitoring'
 
 alias reload=". ~/.bashrc"
 alias h='curl -sIw "Time: %{time_total}s\n" -X GET'
@@ -79,4 +78,4 @@ export PS1="$YELLOW\w\[\$(check_git_changes)\]\$(parse_git_branch)$LIGHT_GRAY $ 
 
 
 # has to be the last command !!
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
