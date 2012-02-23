@@ -8,7 +8,8 @@ autotest_images
 gemrc
 gitshrc
 my.cnf
-gitconfig"
+gitconfig
+tm_properties"
 
 for file in $FILES
 do
