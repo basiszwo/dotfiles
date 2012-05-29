@@ -1,7 +1,7 @@
 [user]
 	name = Stefan Botzenhart
-  # email = sb@basiszwo.com
 	email = sb@ninjaconcept.com
+  # email = sb@basiszwo.com
 
 [apply]
   whitespace = fix
@@ -56,3 +56,6 @@
 
 [core]
 	quotepath = false
+  
+[mergetool]
+	keepBackup = true

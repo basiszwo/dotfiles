@@ -14,4 +14,5 @@ tm_properties"
 for file in $FILES
 do
   ln -s ~/development/dotfiles/$file ~/.$file
+  # ln -s ~/dev-local/dotfiles/$file ~/.$file
 done

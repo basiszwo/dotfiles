@@ -2,16 +2,22 @@
 export CLICOLOR=1;
 
 # Setup Amazon EC2 Command-Line Tools
-export EC2_HOME=~/ec2-api-tools
-export PATH=$PATH:$EC2_HOME/bin
-export EC2_PRIVATE_KEY=~/ec2-api-tools/pk-3ZBQ7YX7CEZJR5ZBAZICDEJTH7ACXECM.pem
-export EC2_CERT=~/ec2-api-tools/cert-3ZBQ7YX7CEZJR5ZBAZICDEJTH7ACXECM.pem
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
+# export EC2_HOME=~/ec2-api-tools
+# export PATH=$PATH:$EC2_HOME/bin
+# export EC2_PRIVATE_KEY=~/ec2-api-tools/pk-3ZBQ7YX7CEZJR5ZBAZICDEJTH7ACXECM.pem
+# export EC2_CERT=~/ec2-api-tools/cert-3ZBQ7YX7CEZJR5ZBAZICDEJTH7ACXECM.pem
+# export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
 
-export EDITOR='mate -w'
-export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/Users/sb/.gem/ruby/1.8/bin
+# export EDITOR="$HOME/bin/mate -w"
+
+# export EDITOR='mate -w'
+export EDITOR='subl -w'
 export SHELL=/bin/bash
+
+export PATH=~/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/texbin:$PATH
+# export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/Users/sb/.gem/ruby/1.8/bin
+
 
 # Finished adapting your PATH environment variable for use with MacPorts.
 export MANPATH=/opt/local/share/man:$MANPATH
