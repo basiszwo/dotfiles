@@ -9,10 +9,11 @@ gemrc
 gitshrc
 my.cnf
 gitconfig
-tm_properties"
+tm_properties
+githelpers
+githelpers_gb"
 
 for file in $FILES
 do
   ln -s ~/development/dotfiles/$file ~/.$file
-  # ln -s ~/dev-local/dotfiles/$file ~/.$file
 done
