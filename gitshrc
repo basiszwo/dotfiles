@@ -10,7 +10,7 @@ gitalias  n='git commit --verbose --amend'
 
 # git add
 gitalias  a='git add'
-gitalias aa='git add --update'
+gitalias aa='git add --all'
 gitalias ap='git add --patch'
 
 # git checkout
@@ -24,7 +24,8 @@ gitalias r='git rebase --interactive HEAD~10'
 
 # git diff
 gitalias d='git diff'
-gitalias p='git diff --cached'   # mnemonic: "patch"
+gitalias dc='git diff --cached'   # mnemonic: "patch"
+gitalias ds='git diff --stat'
 
 # git status
 alias  s='git status'
@@ -33,6 +34,7 @@ alias  s='git status'
 gitalias  L='git log'
 gitalias  l='git log --pretty=oneline --abbrev-commit'
 gitalias ll='git log --pretty=oneline --abbrev-commit --max-count=15'
+gitalias lg='git log -p' # show log in patch format
 
 # experimental
 gitalias mirror='git reset --hard'
