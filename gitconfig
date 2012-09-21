@@ -1,7 +1,6 @@
 [user]
-	name = Stefan Botzenhart
-	email = sb@ninjaconcept.com
-  # email = sb@basiszwo.com
+  name = Stefan Botzenhart
+  email = sb@ninjaconcept.com
 
 [apply]
   whitespace = fix
@@ -12,15 +11,49 @@
 
 [alias]
   co = checkout
-  changes = diff --name-status -r
-  sh = git-sh
-  st = status
-  ci = commit
+  cob = checkout -b
+
   br = branch
+
+  st = status
+
+  ci = commit --verbose
+  ca = commit --verbose --all
+  cia = commit --verbose --amend
+
   df = diff
-  lg = log -p
-  spull = !git-svn fetch && git-svn rebase
-  spush = !git-svn dcommit
+  ds = diff --stat
+  dc = diff --cached
+  changes = diff --name-status -r
+
+  aa = add --all
+  ap = add --patch
+  wc = whatchanged -p --abbrev-commit --pretty=medium
+
+  l = log --pretty=oneline --abbrev-commit
+  ll = log --pretty=oneline --abbrev-commit --max-count=15
+  lp = log -p
+
+  # Experimental stuff
+  pop = reset --soft HEAD^1
+  poph = reset --hard HEAD^1
+  review = log -p --max-count=1
+  unstage = reset HEAD
+
+  # Fancy logging.
+  #   h = head
+  #   hp = head with patch
+  #   r = recent commits, only current branch
+  #   ra = recent commits, all reachable refs
+  #   l = all commits, only current branch
+  #   la = all commits, all reachable refs
+  head = !git l -1
+  h = !git head
+  hp = "!source ~/.githelpers_gb && show_git_head"
+  r = !git l -30
+  ra = !git r --all
+  l = "!source ~/.githelpers_gb && pretty_git_log"
+  la = !git l --all
 
 [diff]
   renames = true
@@ -29,33 +62,13 @@
   sh = auto
   status = auto
   branch = auto
-
-[color "sh"]
-  branch = yellow reverse
-  workdir = blue bold
-  dirty = red
-
-[color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
-
-[color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
-
-[color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+  diff = auto
 
 [github]
   user = basiszwo
 
 [core]
-	quotepath = false
-  
+  quotepath = false
+
 [mergetool]
-	keepBackup = true
+  keepBackup = true
