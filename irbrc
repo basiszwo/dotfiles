@@ -15,16 +15,20 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
   end
 end
 
-Wirble.init
-Wirble.colorize
+if defined? Wirble
+  Wirble.init
+  Wirble.colorize
+end
 
 # pretty print
 # require 'pp'
- 
-Hirb.enable
-puts "Hirb enabled (disable with Hirb.disable)"
 
-#console logging 
+if defined? Hirb
+  Hirb.enable
+  puts "Hirb enabled (disable with Hirb.disable)"
+end
+
+# console logging
 script_console_running = ENV.include?('RAILS_ENV') && IRB.conf[:LOAD_MODULES] && IRB.conf[:LOAD_MODULES].include?('console_with_helpers')
 rails_running = ENV.include?('RAILS_ENV') && !(IRB.conf[:LOAD_MODULES] && IRB.conf[:LOAD_MODULES].include?('console_with_helpers'))
 irb_standalone_running = !script_console_running && !rails_running
