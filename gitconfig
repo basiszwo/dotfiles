@@ -3,19 +3,17 @@
   email = sb@ninjaconcept.com
 
 [apply]
-  whitespace = fix
-
-[core]
-  autocrlf = input
-  whitespace = fix,indent-with-non-tab,trailing-space,-cr-at-eol,space-before-tab
+  whitespace = nowarn
 
 [alias]
   co = checkout
   cob = checkout -b
 
   br = branch
+  bra = branch -a
 
   st = status
+  s = status -s -b
 
   ci = commit --verbose
   ca = commit --verbose --all

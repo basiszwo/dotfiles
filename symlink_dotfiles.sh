@@ -11,7 +11,8 @@ my.cnf
 gitconfig
 tm_properties
 githelpers
-githelpers_gb"
+githelpers_gb
+git-completion.sh"
 
 for file in $FILES
 do
