@@ -28,7 +28,7 @@ alias bu="bundle update"
 
 alias g='git'
 
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
 
 alias mysql_start="sudo /usr/local/mysql/support-files/mysql.server start"
 alias mysql_stop="sudo /usr/local/mysql/support-files/mysql.server stop"
