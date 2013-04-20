@@ -1,9 +1,6 @@
 # Colorize the Terminal
 # export CLICOLOR=1;
 
-# export EDITOR="$HOME/bin/mate -w"
-
-# export EDITOR='mate -w'
 export EDITOR='subl -w'
 export SHELL=/bin/bash
 
@@ -18,6 +15,12 @@ export LC_CTYPE=de_DE.UTF-8
 source ~/.githelpers
 source ~/.git-completion.sh
 
+# source ~/.git-prompt-orig.sh
+# export GIT_PS1_SHOWUPSTREAM="auto"
+# export GIT_PS1_SHOWDIRTYSTATE="true"
+# export GIT_PS1_SHOWCOLORHINTS="true"
+# export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
 # aliases for listing directories
 alias ll="ls -l"
 alias l="ls -la"
@@ -28,7 +31,7 @@ alias bu="bundle update"
 
 alias g='git'
 
-# eval "$(hub alias -s)"
+eval "$(hub alias -s)"
 
 alias mysql_start="sudo /usr/local/mysql/support-files/mysql.server start"
 alias mysql_stop="sudo /usr/local/mysql/support-files/mysql.server stop"
@@ -36,8 +39,7 @@ alias mysql_stop="sudo /usr/local/mysql/support-files/mysql.server stop"
 alias psql_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias psql_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
-# alias redis-start="redis-server /usr/local/etc/redis.conf"
-# alias redis-stop=""
+alias password_gen="ruby ~/development/password_generator.rb"
 
 alias reload=". ~/.bashrc"
 alias h='curl -sIw "Time: %{time_total}s\n" -X GET'
