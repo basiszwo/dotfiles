@@ -15,11 +15,14 @@
   st = status
   s = status -s -b
 
+  blame = blame -w
+  credit = commit --amend --author "$1 <$2>" -C HEAD
+
   ci = commit --verbose
   ca = commit --verbose --all
   cia = commit --verbose --amend
 
-  df = diff
+  df = diff --word-diff
   ds = diff --stat
   dc = diff --cached
   changes = diff --name-status -r
@@ -33,6 +36,7 @@
   lp = log -p
 
   # Experimental stuff
+  undo = reset --soft HEAD^1
   pop = reset --soft HEAD^1
   poph = reset --hard HEAD^1
   review = log -p --max-count=1
@@ -71,4 +75,4 @@
 [mergetool]
   keepBackup = true
 [push]
-	default = simple
+  default = simple
