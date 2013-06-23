@@ -36,6 +36,7 @@
   lp = log -p
 
   # Experimental stuff
+  append = commit --amend
   undo = reset --soft HEAD^1
   pop = reset --soft HEAD^1
   poph = reset --hard HEAD^1
