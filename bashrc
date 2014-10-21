@@ -22,8 +22,8 @@ source ~/.git-completion.sh
 # export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 # aliases for listing directories
-alias ll="ls -l"
-alias l="ls -la"
+alias ll="ls -hl"
+alias l="ls -hla"
 
 alias be="bundle exec"
 alias bi="bundle install"
@@ -44,7 +44,12 @@ alias password_gen="ruby ~/development/password_generator.rb"
 alias reload=". ~/.bashrc"
 alias h='curl -sIw "Time: %{time_total}s\n" -X GET'
 
+#alias my_ip="ifconfig -a | grep 'inet ' | grep broadcast | awk '{ print $2 }'"
+
 # has to be the last command !!
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# added by travis gem
+[ -f /Users/sb/.travis/travis.sh ] && source /Users/sb/.travis/travis.sh
