@@ -32,8 +32,11 @@
   wc = whatchanged -p --abbrev-commit --pretty=medium
 
   l = log --pretty=oneline --abbrev-commit
-  ll = log --pretty=oneline --abbrev-commit --max-count=15
+  ll = log --pretty=oneline --abbrev-commit --max-count=25
+  la = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   lp = log -p
+
+  lg = log --pretty=format:'%C(yellow)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --grep
 
   # Experimental stuff
   append = commit --amend
@@ -55,8 +58,8 @@
   hp = "!source ~/.githelpers_gb && show_git_head"
   r = !git l -30
   ra = !git r --all
-  l = "!source ~/.githelpers_gb && pretty_git_log"
-  la = !git l --all
+  # l = "!source ~/.githelpers_gb && pretty_git_log"
+  # la = !git l --all
 
 [diff]
   renames = true
